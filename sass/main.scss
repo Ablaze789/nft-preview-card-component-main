@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+html,
+body {
+  font-size: 18px;
+  font-family: "Outfit", sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-start;
+  min-height: 100vh;
+  justify-content: space-between;
+  background-color: hsl(217, 54%, 11%);
+}
+.card {
+  margin: 4rem auto;
+  background-color: hsl(216, 50%, 16%);
+  width: 15rem;
+  height: 25rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+  box-shadow: 5px 10px 30px hsl(218, 71%, 7%), -5px -20px 30px hsl(218, 71%, 7%);
+  .nft {
+    width: 100%;
+    height: 52%;
+    background: url("../images/image-equilibrium.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 0.5rem;
+    &:hover .overlay {
+        display: flex;
+    }
+    .overlay {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background: hsl(178, 100%, 50%);
+        background-position: center;
+        background-size: cover;
+        border-radius: 0.5rem;
+        opacity: 0.39;
+        &:hover {
+            display: flex;
+        }
+    }
+  }
+  .details {
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+    padding-bottom: 1rem;
+    .name {
+      color: hsl(0, 0%, 100%);
+      font-weight: 600;
+      &:hover {
+        color: hsl(178, 100%, 50%);
+      }
+    }
+    .description {
+      font-size: 0.875rem;
+    }
+    .price {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 0.875rem;
+        width: 100%;
+        .cost {
+            display: inline-flex;
+            flex-direction: row;
+            align-items: center;
+            align-content: space-between;
+            width: fit-content;
+            svg {
+                margin-right: 0.5rem;
+            }
+        }
+        span {
+            display: inline-block;
+            width: fit-content;
+        }
+    }
+  }
+  .creator {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 0.875rem;
+    text-align: center;
+    height: 5rem;
+  }
+  img {
+      margin-right: 1rem;
+      border: 1px solid hsl(0, 0%, 100%);
+      border-radius: 50%;
+  }
+}
+.hover {
+    cursor: pointer;
+    color: hsl(0, 0%, 100%);
+    &:hover {
+        color: hsl(178, 100%, 50%);
+    }
+}
+.cyan {
+    color: hsl(178, 100%, 50%);
+    font-weight: 400;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}

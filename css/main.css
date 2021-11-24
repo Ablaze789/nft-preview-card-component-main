@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+html,
+body {
+  font-size: 18px;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-items: flex-start;
+  min-height: 100vh;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #0d192b;
+}
+
+.card {
+  margin: 4rem auto;
+  background-color: #14253d;
+  width: 15rem;
+  height: 25rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  color: #8bacda;
+  font-weight: 300;
+  -webkit-box-shadow: 5px 10px 30px #050e1f, -5px -20px 30px #050e1f;
+          box-shadow: 5px 10px 30px #050e1f, -5px -20px 30px #050e1f;
+}
+
+.card .nft {
+  width: 100%;
+  height: 52%;
+  background: url("../images/image-equilibrium.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 0.5rem;
+}
+
+.card .nft:hover .overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card .nft .overlay {
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  background: #00fff7;
+  background-position: center;
+  background-size: cover;
+  border-radius: 0.5rem;
+  opacity: 0.39;
+}
+
+.card .nft .overlay:hover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card .details {
+  border-bottom: 1px solid #2f415b;
+  padding-bottom: 1rem;
+}
+
+.card .details .name {
+  color: white;
+  font-weight: 600;
+}
+
+.card .details .name:hover {
+  color: #00fff7;
+}
+
+.card .details .description {
+  font-size: 0.875rem;
+}
+
+.card .details .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 0.875rem;
+  width: 100%;
+}
+
+.card .details .price .cost {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.card .details .price .cost svg {
+  margin-right: 0.5rem;
+}
+
+.card .details .price span {
+  display: inline-block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.card .creator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.875rem;
+  text-align: center;
+  height: 5rem;
+}
+
+.card img {
+  margin-right: 1rem;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.hover {
+  cursor: pointer;
+  color: white;
+}
+
+.hover:hover {
+  color: #00fff7;
+}
+
+.cyan {
+  color: #00fff7;
+  font-weight: 400;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
